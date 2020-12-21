@@ -1,0 +1,351 @@
+/*............................. footers first.......................... */
+body {
+    font-family: 'Signika', sans-serif;
+ }
+ .bg-grey {
+    background: #292929;
+ }
+ .logo-footer {
+    margin-bottom: 40px;
+ }
+ footer {
+        color: grey;
+ }
+ footer p, a {
+font-size: 12px;
+font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+font-family: 'Playfair Display', serif;
+margin-bottom: 40px;
+position: relative;
+}
+footer h6:after {
+position: absolute;
+content: "";
+background: grey;
+width: 12%;
+height: 1px;
+left: 0;
+bottom: -20px;
+}
+ .btn-footer {
+             color: grey;
+          
+            text-decoration: none;
+            border: 1px solid;
+            border-radius: 43px;
+            font-size: 13px;
+            padding: 7px 30px;
+            line-height: 47px;
+ }
+ .btn-footer:hover {
+            
+            text-decoration: none;
+           
+ }
+.form-footer input[type="text"] {
+    border: none;
+border-radius: 16px 0 0 16px;
+outline: none;
+padding-left: 10px;
+
+}
+::placeholder {
+font-size: 10px;
+padding-left: 10px;
+font-style: italic;
+}
+.form-footer input[type="button"] {
+border: none;
+background:#232323;
+    margin-left: -5px;
+color: #fff;
+outline: none;
+border-radius: 0 16px 16px 0;
+padding: 2px 12px;
+}
+ .social .fa {
+color: grey;
+font-size: 22px;
+padding: 10px 15px;
+background: #3c3c3c;
+}
+ footer ul li {
+list-style: none;
+display: block;
+}
+footer ul  {
+padding-left: 0;
+}
+footer ul  li a{
+text-decoration: none;
+color: grey;
+text-decoration:none;
+}
+a:hover {
+text-decoration: none;
+color: #f5f5f5 !important;
+
+}
+.logo-part {
+border-right: 1px solid grey;
+height: 100%;
+}
+/* .................................footers end.............................. */
+
+/* .................................navber start.............................. */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Signika', sans-serif;
+ }
+* {
+	margin: 0;
+	padding: 0;
+}
+i {
+	margin-right: 10px;
+}
+/*-multi-level-accordian-menu-*/
+.navbar-logo{
+	padding: 15px;
+	color: #fff;
+}
+.navbar-mainbg{
+	background-color: #292929;
+	padding: 0px;
+}
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0., 0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color: #5161ce;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: px;
+	vertical-align: middle;
+	font-weight: 00;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #292929;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}
+/* ..................................navber end............................... */
+
+
+
+main {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(9, max-content);
+	grid-gap: 1rem 1rem;
+	font-family: helvetica, arial, sans-serif;
+   background-color: #5A5D67;
+	font-size: .95vw;
+	font-weight: bold;
+	
+  }
+  
+  .sit_baseline {
+	height: 12.6vw;
+  }
+  
+  main h1 {
+  
+	font-size: 15vw;
+	text-align: center;
+  }
+  
+  header h1 {
+  
+	font-size: 2.85vw;
+	text-align: left;
+  }
+  
+  img {
+	max-width: 100%;
+  }
+  
+  header {
+	grid-area: 1/ 5 / 2 / 7;
+  }
+
+  
+  .img1 {
+	grid-area: 1 / 2 / 3 / 4;
+	height: 13cm;
+	width: 15cm;
+  }
+  
+
+  
+  .img2 {
+	grid-area: 2 / 5 / 3 / 6;
+	height: 7cm;
+	width: 5.5cm;
+  }
+  
+  .img3 {
+	  grid-area: 3 / 1 / 5 / 3;
+	  height: 11.6cm;
+	  width: 15cm;
+  }
+  
+  .img4 {
+	grid-area: 3 / 3 / 5 / 5;
+	height: 11.6cm;
+	width: 15cm;
+  }
+  
+  .img5 {
+	grid-area: 3 / 5 / 4 / 6;
+	height: 10cm;
+	width: 1000%;
+  }
+  
+
+  .img7 {
+	grid-area: 6 / 2 / 8 / 4;
+	height: 11.6cm;
+	width: 15cm;
+  }
+  
+  .img8 {
+	grid-area: 6 / 4 / 7 / 5;
+	height: 5.5cm;
+	width: 10cm;
+  }
+  
+  .img9 {
+	grid-area: 7 / 4 / 8 / 5;
+	height: 5.6cm;
+	width: 10cm;
+  }
+  
+  p {
+	grid-area: 6 / 5 / 8 / 7;
+	width: 60%;
+	line-height: 1.65;
+	align-self: end;
+  }
+  
+  .img10 {
+	grid-area: 8 / 2 / 9 / 3;
+	height: 6cm;
+	width: 10cm;
+  }
+
+  
+  address {
+	grid-area: 9 / 4 / 4 / 3;
+	align-self: end;
+	line-height: 1.4;
+  }
